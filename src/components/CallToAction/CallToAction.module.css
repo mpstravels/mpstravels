@@ -1,0 +1,128 @@
+.main {
+    min-height: 70vh;
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.heroImage {
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.subtitle,
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Playfair;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.buttonGroup {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contactButton,
+.bookButton {
+    outline: none;
+    display: flex;
+    width: 208px;
+    height: 50px;
+    padding: 8px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.46px;
+    cursor: pointer;
+}
+
+.bookButton {
+    border: none;
+    background: linear-gradient(95deg, #3563E9 -0.15%, #47D4FF 49.14%, #3563E9 98.42%);
+}
+
+.contactButton {
+    border: 2px solid #3563E9;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.bookButton:hover,
+.contactButton:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.75rem;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+        width: 100%;
+        max-width: 280px;
+        margin: 2rem auto 0;
+    }
+}

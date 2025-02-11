@@ -1,0 +1,35 @@
+.bookButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-family: Lato;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.46px;
+    outline: none;
+    border: none;
+}
+
+.bookButton {
+    background: linear-gradient(95deg, #3563E9 -0.15%, #47D4FF 49.14%, #3563E9 98.42%);
+    color: white;
+}
+
+.bookButton:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .bookButton{
+        padding: 0.4rem 0.8rem;
+        margin-top: 0.4rem;
+    }
+}

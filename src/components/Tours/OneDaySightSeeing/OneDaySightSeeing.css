@@ -1,0 +1,16 @@
+.swiperPagination {
+    position: static;
+    margin-top: 20px;
+}
+
+:global(.swiper-pagination-bullet) {
+    width: 12px;
+    height: 12px;
+    background: #888;
+    opacity: 0.5;
+}
+
+:global(.swiper-pagination-bullet-active) {
+    background: #000;
+    opacity: 1;
+}

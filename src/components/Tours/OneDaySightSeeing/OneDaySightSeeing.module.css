@@ -1,0 +1,108 @@
+.carouselContainer {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.title {
+    color: #101010;
+    font-family: Playfair;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.carouselSlide {
+    border-radius: 20px;
+    background: #FFF;
+    padding: 1.2rem;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.carouselSlide:hover {
+    transform: scale(1.02);
+}
+
+.carouselImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carouselCaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem;
+}
+
+.carouselTitle {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+.bookButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.bookButton {
+    display: flex;
+    padding: 8px 22px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: linear-gradient(95deg, #3563E9 -0.15%, #47D4FF 49.14%, #3563E9 98.42%);
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.46px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    transform: translateY(0);
+}
+
+.bookButton:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(95deg, #3563E9 -0.15%, #47D4FF 49.14%, #3563E9 98.42%);
+}
+
+@media (max-width: 768px) {
+    .carouselSlide {
+        height: 350px;
+        padding: 0.8rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .carouselTitle {
+        font-size: 1.2rem;
+    }
+
+    .bookButton {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}

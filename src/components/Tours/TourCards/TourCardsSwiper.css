@@ -1,0 +1,51 @@
+/* Responsive Design */
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    display: none !important;
+
+}
+
+@media (max-width: 768px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        transform: scale(0.6);
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        display: none !important;
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background: #4f46e5;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #4f46e5;
+    transform: scale(0.7);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 1.5rem !important;
+}

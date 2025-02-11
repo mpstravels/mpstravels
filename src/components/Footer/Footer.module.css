@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem 8rem;
+    background-color: #ffffff;
+    width: 100%;
+    background-image: url('../../assets/footer.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.titleText {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.32px;
+}
+
+.secondNumber,
+.numberText {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.32px;
+}
+
+.contact {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.secondNumber {
+    margin-left: 6.5rem;
+}
+
+.email {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.email a {
+    color: #4169e1;
+    text-decoration: underline;
+}
+
+.email a:hover {
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    color: #424242;
+    font-family: Lato;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.navItem.active {
+    color: #4169e1;
+}
+
+.navItem:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .contactInfo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .secondNumber {
+        margin-left: 0;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .navItem {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        justify-content: center;
+        padding: 0 3rem;
+    }
+
+    .navItem {
+        flex: 0 0 40%;
+        justify-content: center;
+    }
+}
